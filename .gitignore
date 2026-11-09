@@ -1,0 +1,9 @@
+# Binaries
+restream-nim-linux
+*.exe
+*.o
+*.a
+nimcache/
+
+# Config secrets
+config.json

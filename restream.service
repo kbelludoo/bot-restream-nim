@@ -1,0 +1,17 @@
+[Unit]
+Description=Restream Nim RTMP fan-out & Stream HUD
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/restream
+ExecStart=/home/ubuntu/restream/restream-nim-linux
+Restart=always
+RestartSec=5s
+LimitNOFILE=65535
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

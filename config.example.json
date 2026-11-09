@@ -1,0 +1,33 @@
+{
+  "ingest": {
+    "port": 1935,
+    "streamKey": "stream_key_here",
+    "app": "live"
+  },
+  "targets": [
+    {
+      "name": "Twitch",
+      "url": "rtmp://live.twitch.tv/app",
+      "key": "live_21107325_YimOnx0kdCUXwTxLJA0Gx6aXgHiMXE",
+      "enabled": true
+    },
+    {
+      "name": "Kick",
+      "url": "rtmps://fa723fc1b171.global-contribute.live-video.net/app",
+      "key": "sk_us-west-2_B4TGW0mCmcpr_ljDLFlMEshyWortcD8KnheaC7zpzyw",
+      "enabled": true
+    },
+    {
+      "name": "YouTube",
+      "url": "rtmp://a.rtmp.youtube.com/live2",
+      "key": "5fst-9b20-k652-g8mg-10p0",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "webDashboardPort": 3011,
+    "reconnectMaxDelaySeconds": 30,
+    "gopCacheMaxBytes": 2097152,
+    "targetQueueSize": 128
+  }
+}
